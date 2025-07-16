@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsplash Image Downloader - Mobile Wallpapers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📱 Unsplash Image Downloader</h1>
+            <p>Download high-quality mobile wallpapers from Unsplash</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-section">
+                <input type="text" id="searchInput" placeholder="Enter search term (e.g. nature, abstract, city)">
+                <button id="searchBtn">🔍 Search</button>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-group">
+                    <label for="orientation">Orientation:</label>
+                    <select id="orientation">
+                        <option value="portrait">Portrait</option>
+                        <option value="landscape">Landscape</option>
+                        <option value="squarish">Square</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="count">Photo Count:</label>
+                    <select id="count">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30" selected>30</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="quality">Quality:</label>
+                    <select id="quality">
+                        <option value="regular">Regular</option>
+                        <option value="full" selected>High</option>
+                        <option value="raw">Raw</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="randomBtn">🎲 Get Random</button>
+                <button id="downloadAllBtn" disabled>📦 Download All</button>
+                <button id="clearBtn">🗑️ Clear</button>
+            </div>
+        </div>
+
+        <div class="status" id="status"></div>
+
+        <div class="gallery" id="gallery"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
