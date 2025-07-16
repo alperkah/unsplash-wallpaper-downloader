@@ -1,11 +1,35 @@
 # 📱 Unsplash Image Downloader
 
-A modern web application for downloading high-quality mobile wallpapers from Unsplash with advanced filtering, automatic thumbnail generation, and proper attribution.
+> 🎨 **Download stunning mobile wallpapers with just one click!**  
+> A modern, fast, and intuitive web application for bulk downloading high-quality images from Unsplash.
+
+<div align="center">
+
+![GitHub stars](https://img.shields.io/github/stars/alperkah/unsplash-wallpaper-downloader?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/alperkah/unsplash-wallpaper-downloader?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/alperkah/unsplash-wallpaper-downloader?style=for-the-badge)
+![GitHub license](https://img.shields.io/github/license/alperkah/unsplash-wallpaper-downloader?style=for-the-badge)
 
 ![Unsplash Image Downloader](https://img.shields.io/badge/Unsplash-API-black?style=for-the-badge&logo=unsplash)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+[🚀 **Try Live Demo**](https://alperkah.github.io/unsplash-wallpaper-downloader/) | [📖 **Documentation**](#-how-to-use) | [🐛 **Report Bug**](https://github.com/alperkah/unsplash-wallpaper-downloader/issues)
+
+</div>
+
+---
+
+## 🌟 Why This Tool?
+
+- **🚀 Lightning Fast**: No server required - runs entirely in your browser
+- **📦 Bulk Download**: Download multiple wallpapers as organized ZIP files  
+- **🎯 Smart Filtering**: Find exactly what you need with advanced search options
+- **📱 Mobile Optimized**: Perfect wallpapers for any device orientation
+- **🎨 Auto Thumbnails**: Get 400x600 previews automatically generated
+- **📄 Proper Attribution**: Automatic credit files for all photographers
+- **🔒 Privacy First**: Your API key stays local, no data collection
 
 ## ✨ Features
 
@@ -169,11 +193,44 @@ Downloaded photos are subject to the [Unsplash License](https://unsplash.com/lic
 
 Found a bug or have a feature request? Please open an issue on GitHub.
 
+## 📊 Stats & Analytics
+
+<div align="center">
+
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/alperkah/unsplash-wallpaper-downloader?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/alperkah/unsplash-wallpaper-downloader?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/alperkah/unsplash-wallpaper-downloader?style=flat-square)
+
+</div>
+
+## 🌟 Show Your Support
+
+If this project helped you, please consider:
+
+- ⭐ **Star this repository** to show your support
+- 🍴 **Fork it** to contribute or customize
+- 📢 **Share it** with others who might find it useful
+- 🐛 **Report issues** to help improve the project
+
 ## 🙏 Acknowledgments
 
 - [Unsplash](https://unsplash.com) for providing the amazing photo API
 - [JSZip](https://stuk.github.io/jszip/) for client-side ZIP generation
 - All the talented photographers on Unsplash
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+
+**Made with ❤️ for the developer community**
+
+[⬆ Back to Top](#-unsplash-image-downloader)
+
+</div>
 
 ---
 

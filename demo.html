@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Unsplash Image Downloader</title>
+    <meta name="description" content="Demo of Unsplash Image Downloader - Download high-quality mobile wallpapers with advanced filtering">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📱 Unsplash Image Downloader</h1>
+            <p>Download high-quality mobile wallpapers from Unsplash</p>
+            <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; margin-top: 15px;">
+                <strong>🚀 Demo Version</strong> - 
+                <a href="https://github.com/alperkah/unsplash-wallpaper-downloader" style="color: #FFD700;">Get the full version on GitHub</a>
+            </div>
+        </header>
+
+        <div class="controls">
+            <div class="search-section">
+                <input type="text" id="searchInput" placeholder="Enter search term (e.g. nature, abstract, city)" disabled>
+                <button id="searchBtn" disabled>🔍 Search</button>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-group">
+                    <label for="orientation">Orientation:</label>
+                    <select id="orientation" disabled>
+                        <option value="portrait">Portrait</option>
+                        <option value="landscape">Landscape</option>
+                        <option value="squarish">Square</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="count">Photo Count:</label>
+                    <select id="count" disabled>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30" selected>30</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="quality">Quality:</label>
+                    <select id="quality" disabled>
+                        <option value="regular">Regular</option>
+                        <option value="full" selected>High</option>
+                        <option value="raw">Raw</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="randomBtn" disabled>🎲 Get Random</button>
+                <button id="downloadAllBtn" disabled>📦 Download All</button>
+                <button id="clearBtn" disabled>🗑️ Clear</button>
+            </div>
+        </div>
+
+        <div class="status" id="status">
+            <div style="background: #e3f2fd; color: #1976d2; padding: 20px; border-radius: 8px; text-align: center;">
+                <h3>🚀 This is a Demo Version</h3>
+                <p>To use the full functionality with your own Unsplash API key:</p>
+                <ol style="text-align: left; max-width: 400px; margin: 15px auto;">
+                    <li>Clone the <a href="https://github.com/alperkah/unsplash-wallpaper-downloader" style="color: #1976d2;">GitHub repository</a></li>
+                    <li>Get your free API key from <a href="https://unsplash.com/developers" style="color: #1976d2;">Unsplash Developers</a></li>
+                    <li>Create a <code>config.js</code> file with your API key</li>
+                    <li>Enjoy unlimited wallpaper downloads!</li>
+                </ol>
+                <a href="https://github.com/alperkah/unsplash-wallpaper-downloader" 
+                   style="display: inline-block; background: #1976d2; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-top: 10px;">
+                   📥 Download Full Version
+                </a>
+            </div>
+        </div>
+
+        <div class="gallery" id="gallery">
+            <!-- Demo gallery with placeholder images -->
+            <div class="photo-card">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Demo wallpaper" loading="lazy">
+                <div class="photo-info">
+                    <div class="photo-author">📸 Demo Photographer</div>
+                    <div class="photo-description">Beautiful landscape wallpaper</div>
+                    <div class="photo-actions">
+                        <button class="download-btn" disabled>⬇️ Download</button>
+                        <button class="select-btn" disabled>✓ Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=400&h=300&fit=crop" alt="Demo wallpaper" loading="lazy">
+                <div class="photo-info">
+                    <div class="photo-author">📸 Demo Photographer</div>
+                    <div class="photo-description">Abstract mobile wallpaper</div>
+                    <div class="photo-actions">
+                        <button class="download-btn" disabled>⬇️ Download</button>
+                        <button class="select-btn" disabled>✓ Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="https://images.unsplash.com/photo-1533628635777-112b2239b1c7?w=400&h=300&fit=crop" alt="Demo wallpaper" loading="lazy">
+                <div class="photo-info">
+                    <div class="photo-author">📸 Demo Photographer</div>
+                    <div class="photo-description">Minimalist design wallpaper</div>
+                    <div class="photo-actions">
+                        <button class="download-btn" disabled>⬇️ Download</button>
+                        <button class="select-btn" disabled>✓ Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="demo-config.js"></script>
+</body>
+</html>
