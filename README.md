@@ -55,11 +55,17 @@
    - Accept the terms and guidelines
 5. Copy your **Access Key** from the application dashboard
 
-### 2. Configure the Application
+### 2. Run the Application
 
 1. Clone or download this repository
-2. Create a `config.js` file in the project root
-3. Add your API key to the config file:
+2. Open `index.html` in a modern web browser
+3. Paste your **Access Key** into the on-screen prompt and hit **Save key**
+
+That's it — the key is stored only in your browser's `localStorage`, never sent anywhere but Unsplash. Start searching and downloading wallpapers!
+
+#### Optional: pre-configure with `config.js`
+
+Prefer to bake the key in (e.g. for a private deployment)? Create a `config.js` file in the project root and it will be picked up automatically:
 
 ```javascript
 // config.js
@@ -70,11 +76,6 @@ const CONFIG = {
 ```
 
 **⚠️ Important**: Never commit your actual API key to version control. The `config.js` file is excluded from git tracking.
-
-### 3. Run the Application
-
-1. Open `index.html` in a modern web browser
-2. Start searching and downloading wallpapers!
 
 ## 📁 Project Structure
 
